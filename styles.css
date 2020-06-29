@@ -1,0 +1,292 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Titillium web", sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: lightslategrey;
+    overflow: hidden;
+    /*position: fixed;*/
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color:white;
+  }
+
+  #hero{
+    background-image:url("porta.jpg");
+    background-size: cover;
+    width: auto; height: 300px;
+    padding-top: 90px;
+    min-width: 1000px;
+    color: #1a1a1a;
+    margin-top: 0;
+}
+#hero p{
+    color: #1a1a1a;
+}
+.content-center{
+    max-width: 800px;
+    margin: 130px auto 1px auto;
+    text-align: center;   
+}
+.content-center h1{
+    color: #f2f2f2;
+    font-size: 50px; font-weight: 550; line-height: 40px;
+}
+.form-control{
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 40px;
+    width: 300px;
+}
+
+/*card-group*/
+.group-cards{
+    margin-top: 70px;
+}
+
+.cards{
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+.content img{
+    height: 200px;
+    width: 250px;
+}
+.content > *{
+    flex: 1 1 100%;
+}
+.content h2{
+    font-size: 30px;
+    margin: 16px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.content p{
+    margin-top: 3px;
+    font-size: 17px;
+    font-family: ´poppins´, sans-serif;
+    text-align: justify;
+}
+.content a{
+    margin: 22px 0;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: .3s ease;
+}
+.content a:hover{
+    color: grey;
+}
+@media (max-width: 900px){
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+.parra{
+    margin-top: 100px;
+    border: .5px solid black;
+}
+.left-col{
+    float: left;
+    margin-left: 50px;
+    width: 50%;
+    height: auto;
+    padding: 1%;
+}
+.left-col p{
+    text-align: justify;
+    line-height: 20px;
+}
+.left-col button{
+    margin-top: 30px;
+    padding: 15px 20px;
+    display: inline-block;
+    position: relative;
+    background-color:  #2196f3;
+    letter-spacing: 2px;    
+    font-size: 10px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.neon-button:hover{
+    color: #2196f3;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: .1s;
+}
+.sidebar{
+    float: right;
+    margin-right: 300px;
+    width: 240px;
+    height: 200px;
+    padding: 1%;
+}
+
+.socialOne{
+    margin-top: 425px;
+    text-align: center;  
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width: 900px){
+    .socialOne{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+.socialOne .fab{
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 80px;
+    color: black;
+}
+
+.footer{
+    clear: both;
+    width: 100%;
+    background-color: darkslategray;
+    display: block;
+    margin-top: 70px;
+}
+.inner-footer{
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.footer-items{
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.footer h1{
+    padding: 10px 0;
+    font-size: 25px;
+    color: floralwhite;
+    text-transform: uppercase;
+}
+.footer-items p{
+    color: grey;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+.footer h2{
+    margin: 10px 0;
+    color: mediumturquoise;
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.footer .border{
+    height: 2px;
+    width: 40px;
+    background-color: white;
+}
+.footer ul{
+    list-style: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.footer ul a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+    transition: 0.3s;
+}
+.footer ul a:hover{
+    color: silver;
+}
+.footer ul li{
+    margin: 10px 0;
+    height: 25px;
+}
+.footer ul li i{
+    margin-right: 20px;
+}
+.social-media{
+   width: 100%;
+   color: white;
+   text-align: center; 
+}
+.social-media a{
+    text-decoration: none;
+}
+.social-media i{
+    height: 15px;
+    width: 15px;
+    margin: 20px 5px;
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    border: 3px solid gray;
+    transition: 0.3s;
+}
+.social-media i:hover{
+    background-color: gray;
+}
+.footer-bottom{
+    padding: 10px;
+    background-color: gray;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+.footer-items ion-icon{
+    width: 23px;
+    height: 23px;
+}
+
+
+@media (max-width: 575.98px) { 
+    h1{font-size: 40px; line-height: normal;}
+ }
+@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 1200px) {}
